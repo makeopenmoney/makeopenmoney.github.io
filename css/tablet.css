@@ -4,7 +4,6 @@
 .bp1-desktophdcopy2 {
   width               : 100%;
   min-width           : 1440px;
-  height              : 100vh;
   min-height          : 650px;
   position            : relative;
   overflow            : hidden;
