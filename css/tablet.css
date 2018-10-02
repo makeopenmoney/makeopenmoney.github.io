@@ -1,206 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:500');
 
 
-.bp2-mobilecopy {
-  width               : 100%;
-  min-width           : 320px;
-  height              : 100vh;
-  min-height          : 1996px;
-  position            : relative;
-  overflow            : hidden;
-  margin              : 0px;
-  background-color    : rgba(255, 255, 255, 1.0);
-}
-div {
-  -webkit-text-size-adjust: none;
-}
-.bp2-mobilecopy .bp2-logoblackvectorized {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 56px;
-  height              : 39px;
-  width               : 204px;
-  position            : absolute;
-  margin              : 0;
-  left                : 16px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.bp2-mobilecopy .bp2-logoblackvectorized .bp2-groupcopy2 {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 0px;
-  height              : 39px;
-  width               : 129px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.bp2-mobilecopy .bp2-logoblackvectorized .bp2-groupcopy2 .bp2-combinedshape {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 0px;
-  height              : 39px;
-  width               : 43px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.bp2-mobilecopy .bp2-logoblackvectorized .bp2-groupcopy2 .bp2-path {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 0px;
-  height              : 38px;
-  width               : 41px;
-  position            : absolute;
-  margin              : 0;
-  left                : 45px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.bp2-mobilecopy .bp2-logoblackvectorized .bp2-groupcopy2 .bp2-combinedshape1 {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 0px;
-  height              : 38px;
-  width               : 41px;
-  position            : absolute;
-  margin              : 0;
-  left                : 88px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.bp2-mobilecopy .bp2-logoblackvectorized .bp2-openmoneyinitiativ {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 0px;
-  height              : 38px;
-  width               : 72px;
-  position            : absolute;
-  margin              : 0;
-  left                : 131px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.bp2-mobilecopy .bp2-group {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 127px;
-  height              : 1296px;
-  width               : 289px;
-  position            : absolute;
-  margin              : 0;
-  left                : 16px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.bp2-mobilecopy .bp2-group .bp2-theopenmoneyiniti {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 0px;
-  height              : auto;
-  width               : 289px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-  font-family         : "Roboto", Helvetica, Arial, serif;
-  font-weight         : 500;
-  font-style          : normal;
-  font-size           : 18.0px;
-  color               : rgba(0, 0, 0, 1.0);
-  text-align          : left;
-  line-height         : 27.0px;
-}
-/* .anima-animate-appear prefix for appear animations */
-.anima-animate-appear {
-  opacity             : 0;
-  display             : block;
-  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
-  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
-  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
-  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
-}
-.anima-animate-disappear {
-  opacity             : 1;
-  display             : block;
-  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
-  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
-  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
-  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
-}
-.anima-animate-nodelay {
-  -webkit-animation-delay: 0;
-  -moz-animation-delay: 0;
-  -o-animation-delay  : 0;
-  animation-delay     : 0;
-}
-@-webkit-keyframes anima-reveal {
-  0%
-   
-  {
-      opacity: 0;
-    }
-  
-    
-  100%
-   
-  {
-      opacity: 1;
-    }
-}
-@-moz-keyframes anima-reveal {
-  0%
-   
-  {
-      opacity: 0;
-    }
-  
-    
-  100%
-   
-  {
-      opacity: 1;
-    }
-}
-@-o-keyframes anima-reveal {
-  0%
-   
-  {
-      opacity: 0;
-    }
-  
-    
-  100%
-   
-  {
-      opacity: 1;
-    }
-}
-@keyframes anima-reveal {
-  0%
-   
-  {
-      opacity: 0;
-    }
-  
-    
-  100%
-   
-  {
-      opacity: 1;
-    }
-}
 .bp1-desktophdcopy2 {
   width               : 100%;
   min-width           : 1440px;
   height              : 100vh;
-  min-height          : 1141px;
+  min-height          : 650px;
   position            : relative;
   overflow            : hidden;
   margin              : 0px;
@@ -308,8 +113,8 @@ div {
 }
 .bp1-desktophdcopy2 .bp1-group {
   background-color    : rgba(255,255,255,0.0);
-  top                 : 176px;
-  height              : 540px;
+  top                 : 192px;
+  height              : 405px;
   width               : 936px;
   position            : absolute;
   margin              : 0;
@@ -420,7 +225,7 @@ div {
   width               : 100%;
   min-width           : 768px;
   height              : 100vh;
-  min-height          : 1024px;
+  min-height          : 750px;
   position            : relative;
   overflow            : hidden;
   margin              : 0px;
@@ -522,8 +327,8 @@ div {
 }
 .bp3-tablet .bp3-group {
   background-color    : rgba(255,255,255,0.0);
-  top                 : 167px;
-  height              : 648px;
+  top                 : 191px;
+  height              : 513px;
   width               : 704px;
   position            : absolute;
   margin              : 0;
@@ -537,6 +342,201 @@ div {
   top                 : 0px;
   height              : auto;
   width               : 704px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "Roboto", Helvetica, Arial, serif;
+  font-weight         : 500;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : left;
+  line-height         : 27.0px;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+.bp2-mobilecopy {
+  width               : 100%;
+  min-width           : 320px;
+  height              : 100vh;
+  min-height          : 1141px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  background-color    : rgba(255, 255, 255, 1.0);
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.bp2-mobilecopy .bp2-logoblackvectorized {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 56px;
+  height              : 39px;
+  width               : 204px;
+  position            : absolute;
+  margin              : 0;
+  left                : 16px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.bp2-mobilecopy .bp2-logoblackvectorized .bp2-groupcopy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 39px;
+  width               : 129px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.bp2-mobilecopy .bp2-logoblackvectorized .bp2-groupcopy2 .bp2-combinedshape {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 39px;
+  width               : 43px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.bp2-mobilecopy .bp2-logoblackvectorized .bp2-groupcopy2 .bp2-path {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 41px;
+  position            : absolute;
+  margin              : 0;
+  left                : 45px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.bp2-mobilecopy .bp2-logoblackvectorized .bp2-groupcopy2 .bp2-combinedshape1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 41px;
+  position            : absolute;
+  margin              : 0;
+  left                : 88px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.bp2-mobilecopy .bp2-logoblackvectorized .bp2-openmoneyinitiativ {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 38px;
+  width               : 72px;
+  position            : absolute;
+  margin              : 0;
+  left                : 131px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.bp2-mobilecopy .bp2-group {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 127px;
+  height              : 972px;
+  width               : 289px;
+  position            : absolute;
+  margin              : 0;
+  left                : 16px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.bp2-mobilecopy .bp2-group .bp2-theopenmoneyiniti {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 289px;
   position            : absolute;
   margin              : 0;
   left                : 0px;
