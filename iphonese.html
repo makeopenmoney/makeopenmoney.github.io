@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./img/favicon.png" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+        <link href="./css/iphoneSe.css" rel="stylesheet" type="text/css"/>
+        <meta content="Launchpad by Anima" name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+ background: rgba(128, 140, 167, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="iphonese"/>
+        <div class="iphonese">
+            <div class="rectangle">
+            </div>
+            <div class="group-layout-container">
+                <div class="group">
+                    <a href="home.html">
+                        <div class="home">
+                            Home
+                        </div>
+                    </a>
+                    <a href="https://medium.com/@openmoneyinitiative">
+                        <div class="blog">
+                            Blog
+                        </div>
+                    </a>
+                    <a href="mailto:info@openmoneyinitiative.org" target="_blank">
+                        <div class="contact">
+                            Contact
+                        </div>
+                    </a>
+                    <a href="home.html">
+                        <img anima-src="./img/iphone-se-path@2x.png" class="path" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </a>
+                </div>
+            </div>
+            <div class="group2-layout-container">
+                <div class="group2">
+                    <div class="followus">
+                        FOLLOW US:
+                    </div>
+                    <a href="http://www.twitter.com/makeopenmoney" target="_blank">
+                        <img anima-src="./img/iphone-se-shape@2x.png" class="shape" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </a>
+                    <div class="iconmonstrmedium2">
+                        <a href="https://medium.com/@openmoneyinitiative" target="_blank">
+                            <img anima-src="./img/iphone-se-shape 1@2x.png" class="shape1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("anima-src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("anima-src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+    </body>
+</html>
