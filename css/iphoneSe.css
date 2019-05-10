@@ -9,6 +9,8 @@
   position            : relative;
   overflow            : hidden;
   margin              : 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color    : rgba(128, 140, 167, 1.0);
 }
 a {
@@ -28,12 +30,12 @@ div {
 }
 .iphonese .rectangle {
   background-color    : rgba(128, 140, 167, 1.0);
-  top                 : 0%;
+  top                 : 0px;
   height              : 100%;
   width               : 100%;
   position            : absolute;
   margin              : 0;
-  left                : 0%;
+  left                : 0px;
   -ms-transform       : rotate(0deg); /* IE 9 */
   -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
   transform           : rotate(0deg);
@@ -199,7 +201,7 @@ div {
   top                 : 0px;
   height              : 102px;
   width               : 102px;
-  position            : relative;
+  position            : absolute;
   margin              : 0;
   left                : 0px;
   -ms-transform       : rotate(0deg); /* IE 9 */
